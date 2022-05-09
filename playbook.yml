@@ -2,7 +2,7 @@
 - name: setup
   hosts: localhost
   become: true
-  roles:
+  tasks:
     - include_role:
         name: nvidia.nvidia_driver
       vars:
